@@ -30,20 +30,20 @@ public class DPIGetter {
 
         alertDialogBuilder.setView(promptsView);
 
-        final EditText xdpiEdit = promptsView
-                .findViewById(R.id.xdpi);
-        final EditText ydpiEdit = promptsView
-                .findViewById(R.id.ydpi);
-        xdpiEdit.setText(xdpi+"");
-        ydpiEdit.setText(ydpi+"");
+//        final EditText xdpiEdit = promptsView
+//                .findViewById(R.id.xdpi);
+//        final EditText ydpiEdit = promptsView
+//                .findViewById(R.id.ydpi);
+//        xdpiEdit.setText(xdpi+"");
+//        ydpiEdit.setText(ydpi+"");
 
         alertDialogBuilder
                 .setCancelable(false)
                 .setPositiveButton("OK",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,int id) {
-                                setXDPI(Float.parseFloat(String.valueOf(xdpiEdit.getText())));
-                                setYDPI(Float.parseFloat(String.valueOf(ydpiEdit.getText())));
+//                                setXDPI(Float.parseFloat(String.valueOf(xdpiEdit.getText())));
+//                                setYDPI(Float.parseFloat(String.valueOf(ydpiEdit.getText())));
                             }
                         })
                 .setNegativeButton("Cancel",

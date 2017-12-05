@@ -25,23 +25,23 @@
 Please don't change it if you don't need to,\n
 or not aware of your actions." />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="XDPI: "
-        android:id="@+id/xdpitext"
-        android:layout_marginBottom="15dp"
-        android:layout_alignBottom="@id/xdpi"/>
-
     <EditText
         android:id="@+id/xdpi"
-        android:layout_toRightOf="@id/xdpitext"
+        android:layout_toRightOf="@id/textView2"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:layout_below="@id/textView2">
 
         <requestFocus />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XDPI: "
+            android:id="@+id/xdpitext"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@id/xdpi"/>
 
     </EditText>
 
@@ -52,7 +52,7 @@ or not aware of your actions." />
         android:id="@+id/ydpitext"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="10dp"
-        android:layout_alignBottom="@id/ydpi"
+        android:layout_alignBottom="@id/xdpitext"
         android:layout_toRightOf="@id/xdpi"/>
 
     <EditText
